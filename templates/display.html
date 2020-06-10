@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Display</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="static/style.css">
+</head>
+<body>
+    <div class="row mb-5">
+        <div class="col-lg-8 mx-auto">
+            <div class="bg-white p-5 rounded shadow text-justify">
+                {% for item in results[:5] %}
+                    <h2>Title: {{item['title']}}</h2>
+                    <h3><a href={{item['link']}} target="_blank">{{item['link']}}</a></h3>
+                    <h5 class="mx-auto">{{item['header']}}</h5>
+                    <br>
+                    <p class="lead font-weight-normal">{{item['description']}}</p>
+                    <br>
+                    <br>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+</body>
+</html>

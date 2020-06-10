@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Home</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="static/style.css">
+</head>
+<body>
+  <!--Heading-->
+  <div class="container">
+  <div class="row py-5">
+    <div class="col-lg-9 mx-auto text-white text-center">
+      <h1 class="display-4 font-weight-bold">Keyword Search Applicaion</h1>
+      <p class="lead mb-0 font-weight-bold font-italic">Provides relevant information regarding the searched keyword.</p>
+      <p class="lead font-italic font-weight-bold">Built by Aroop Kumar</p>
+    </div>
+  </div>
+  <!-- End -->
+
+
+  <div class="row mb-5">
+    <div class="col-lg-8 mx-auto">
+      <div class="bg-white p-5 rounded shadow">
+
+        <!-- Underlined search bars with buttons -->
+        <form action = "http://localhost:5000/search" method = "POST" enctype = "multipart/form-data" target="_blank">
+          <div class="row mb-4">
+            <div class="form-group col-md-9">
+              <input id="exampleFormControlInput5" name="key" type="text" placeholder="What're you searching for?" class="form-control form-control-underlined">
+            </div>
+            <div class="form-group col-md-3">
+              <button type="submit" class="btn btn-primary rounded-pill btn-block shadow-sm">Search</button>
+            </div>
+          </div>
+        </form>
+        <!-- End -->
+
+      </div>
+    </div>
+  </div>
+</body>
+</html>
